@@ -1,3 +1,116 @@
-header{
-    background: blue;
+footer{
+    padding: 10px;
+    margin-left: 20px;
+    color: white;
+
+}
+
+.fa-instagram{
+    background: none;
+    color: white;
+    font-size: 50px;
+    float: inline-end;
+    margin-right: 40px;
+    margin-left: 5px;
+}
+
+html {
+    height: 100vh;
+}
+/* sizing parameters for ICONS, LOGO, and IMGS start here */
+@media (max-width: 1500px) {
+    #plushi-img {
+        width: 22vw;
+    }
+    #logo-img {
+        width: 22vw;
+    }
+    .img-shift {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 992px) {
+    #plushi-img {
+        width: 28vw;
+    }
+    #logo-img {
+        width: 28vw;
+    }
+    .img-shift {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #plushi-img {
+        width: 35vw;
+    }
+    #logo-img {
+        width: 35vw;
+    }
+    .img-shift {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 576px) {
+    #plushi-img {
+        width: 70vw;
+    }
+    #logo-img {
+        width: 70vw;
+    }
+    .img-shift {
+        width: 70vw;
+    }
+
+}
+/* Sizing parameters for ICONS, LOGO, and IMGS ends here */
+
+/* Page Icon Images tilting animation */
+.img-shift {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20%;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+}
+
+/* Page Icon Images Description Text*/
+.img__description {
+    position: relative;
+    top: 1vmax;
+    color: black;
+    text-align: center;
+    /* opacity: 0; this line determines hover over text invisible or visible*/
+    transition: opacity .4s, visibility .2s;
+}
+
+@media (max-width: 768px) {
+
+    .img__description {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: black;
+        visibility: visible;
+        text-align: center;
+        opacity: 1;
+        z-index: 2;
+    }
+
+}
+
+/* CSS Animations for Page Icons */
+/* .img__wrap:hover .img__description {
+    visibility: visible;
+    /* opacity: 1; 
+} */
+
+.img__wrap:hover .img-shift {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
