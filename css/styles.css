@@ -1,8 +1,9 @@
+/* video css */
 iframe{
     margin-left: 305px;
     margin-bottom: 25px;
 }
-
+/* footer icon css starts here */
 footer{
     padding: 10px;
     margin-left: 20px;
@@ -88,9 +89,9 @@ html {
     }
 
 }
-/* Sizing parameters for ICONS, LOGO, and IMGS ends here */
 
-/* Page Icon Images tilting animation */
+
+/* Homepage Icon Images tilting animation */
 .img-shift1{
     width: 100%;
     margin-top: 75px;
@@ -108,13 +109,10 @@ html {
     transition: transform .4s ease-in-out;
 }
 
-/* Page Icon Images Description Text*/
+/* Homepage icon labels CSS*/
 .img__description {
-    position: relative;
-    top: 1vmax;
     color: black;
     text-align: center;
-    /* opacity: 0; this line determines hover over text invisible or visible*/
     transition: opacity .4s, visibility .2s;
 }
 
