@@ -1,46 +1,59 @@
-/* video css */
-iframe{
-    margin-left: 305px;
-    margin-bottom: 25px;
+
+/* CSS Animations for Page Icons */
+
+.img__wrap:hover .img-shift1 {
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
 }
-/* footer icon css starts here */
-footer{
-    padding: 10px;
-    margin-left: 20px;
-    color: white;
+
+.img__wrap:hover .img-shift2 {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* INDEX ICON Images tilting animation */
+/* These are separate from img_wrap because I want the hover effect, and also edit what the image does without the hover. */
+.img-shift1{
+    width: 100%;
+    margin-top: 75px;
+    margin-left: -50px;
+    border-radius: 5%;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+
+}
+.img-shift2{
+    width: 100%;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+ 
+}
+
+/* INDEX icon labels CSS*/
+.img__description {
+    color: black;
+    text-align: center; 
+}
+
+/* SIZING PARAMETERS for ICONS, LOGO, and IMGS start here */
+@media (max-width: 768px) {
+
+    .img__description {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: black;
+        visibility: visible;
+        text-align: center;
+        opacity: 1;
+    }
 
 }
 
-.fa:hover {
-    opacity: 0.7;
-    color: blue;
-    -webkit-transition: -webkit-transform .1s ease-in-out;
-    transition: transform .1s ease-in-out;
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg);
-}
-
-.fa-instagram{
-    background: none;
-    color: white;
-    font-size: 50px;
-    float: inline-end;
-    margin-right: 40px;
-    margin-left: 25px;
-}
-
-.fa-facebook {
-    background: none;
-    color: white;
-    font-size: 50px;
-    float: inline-end;
-    margin-left: 0px;
-}
-
-html {
-    height: 100vh;
-}
-/* sizing parameters for ICONS, LOGO, and IMGS start here */
 @media (max-width: 1500px) {
     #plushi-img {
         width: 22vw;
@@ -90,60 +103,7 @@ html {
 
 }
 
-
-/* Homepage Icon Images tilting animation */
-.img-shift1{
-    width: 100%;
-    margin-top: 75px;
-    margin-left: -50px;
-    border-radius: 5%;
-    -webkit-transition: -webkit-transform .4s ease-in-out;
-    transition: transform .4s ease-in-out;
-}
-.img-shift2{
-    width: 100%;
-    margin-top: -50px;
-    margin-bottom: 20px;
-    border-radius: 5%;
-    -webkit-transition: -webkit-transform .4s ease-in-out;
-    transition: transform .4s ease-in-out;
-}
-
-/* Homepage icon labels CSS*/
-.img__description {
-    color: black;
-    text-align: center;
-    transition: opacity .4s, visibility .2s;
-}
-
-@media (max-width: 768px) {
-
-    .img__description {
-        position: relative;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        color: black;
-        visibility: visible;
-        text-align: center;
-        opacity: 1;
-    }
-
-}
-
-/* CSS Animations for Page Icons */
-
-.img__wrap:hover .img-shift1 {
-    -webkit-transform: rotate(-35deg);
-    transform: rotate(-35deg);
-}
-
-.img__wrap:hover .img-shift2 {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-/* <--CSS for contact starts here--> */
+/* <--CSS for CONTACT starts here--> */
 .map{
     margin-right: 300px;
 }
@@ -187,4 +147,57 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #ffc5cf;
   padding: 20px;
+}
+
+/* VIDEO css */
+
+iframe{
+    margin-left: 305px;
+    margin-bottom: 25px;
+}
+
+/* FOOTER CSS starts here */
+
+footer{
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 50px;
+    height: 20vh;
+    width: 100%;
+    color: #030202;
+    opacity: 1;
+    font-family: 'Archivo Black', sans-serif;
+    background-image: url(/img/plushies.jpeg);
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: #0004e7;
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+    transition: transform .1s ease-in-out;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    opacity: 1;
+}
+
+.fa-instagram{
+    background: none;
+    color: #000000;
+    font-size: 70px;
+    float: inline-end;
+    margin-right: 40px;
+    margin-left: 25px;
+}
+
+.fa-facebook {
+    background: none;
+    color: #000000;
+    font-size: 70px;
+    float: inline-end;
+    margin-left: 0px;
+}
+
+html {
+    height: 100vh;
 }
